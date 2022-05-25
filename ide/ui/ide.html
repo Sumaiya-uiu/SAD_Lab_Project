@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AssessmentHack IDE</title>
+
+    <link rel="icon" href="title.png" type="image/png">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+</head>
+<body class="ps-5 pe-5" style="position: relative; overflow: hidden;">
+     <!-- style="position: relative; overflow: hidden;" -->
+
+    <div class="header" style="background-color: #6f1f3a;text-align: center;"> AssessmentHack IDE </div>
+    <div class="control-panel">
+        Select Language:
+        &nbsp; &nbsp;
+        <select id="languages" class="languages" onchange="changeLanguage()">
+            <option value="c"> C </option>
+            <option value="cpp"> C++ </option>
+            <option value="python"> Python </option>
+        </select>
+    </div>
+    <div class="editor" id="editor"></div>
+
+    <div class="button-container" >
+        <button class="btn" style="background-color: #6f1f3a; color: #ffffff;"onclick="executeCode()"> Run </button>
+    </div>
+
+    <div class="output pb-5"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/lib/ace.js"></script>
+    <script src="js/lib/theme-monokai.js"></script>
+    <script src="js/ide.js"></script>
+
+</body>
+</html>
